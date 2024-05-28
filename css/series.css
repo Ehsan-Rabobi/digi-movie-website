@@ -1,0 +1,975 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+ul{
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+}
+
+/* start header */
+
+header > div.logo{
+    display: flex;
+    justify-content: space-between;
+}
+header > div.logo > div.l1{
+    width: 20%;
+    margin: 30px;
+}
+header > div.logo > div.l1 > ul {
+    display: flex;
+    justify-content: space-around;
+}
+header > div.logo > div.l1 > ul > li{
+    background-color: rgba(83, 83, 83, 0.527);
+    padding: 7px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 80px;
+    margin-right: 10px;
+    width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header > div.logo > div.l1 > ul > li >a > i{
+    font-size: 22px;
+    vertical-align: -2px;
+}
+header > div.logo > div.l1 > ul > li:hover{
+    background-color: rgb(245, 156, 39);
+}
+header > div.logo > div.l2 {
+    /* margin-left: 50px; */
+    /* width: 25%; */
+    padding: 0  50px;
+}
+header > div.logo > div.l2 > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* start nav */
+
+
+nav {
+    /* margin-top: 0px; */
+    width: 100%;
+    min-height: 90px;
+    background-color: rgba(58, 58, 58, 0.459);
+}
+nav> div.nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav> div.nav > div.n2{
+    width: 60%;
+}
+nav> div.nav > div.n1 > ul.menu1{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10px; */
+}
+nav> div.nav > div.n1 > ul.menu1 > li.menu-item1{
+    margin-top:5px;
+    padding: 20px;
+    margin-right: 40px;
+    font-size: 17px;
+    display: flex;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+
+}
+
+nav> div.nav > div.n1 > ul > li >a > span {
+    color: rgb(245, 156, 39);
+    font-size: 16px;
+
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > a > i{
+    color: rgb(245, 156, 39);
+    position: absolute;
+    /* left: 72px; */
+    font-size: 28px;
+    /* top: 20px; */
+    transition: all .3s;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > a > i.bx-home{
+    top: 26px;
+    left: 70px;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > a > i.bx-film{
+    top: 28px;
+    left: 90px;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > a > i.bx-tv{
+    top: 28px;
+    left: 95px;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > a > i.bxs-face{
+    top: 29px;
+    left: 80px;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > a > i.bxs-phone{
+    top: 29px;
+    left: 85px;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1:hover > a > i{
+    /* color: gainsboro; */
+    font-size: 33px;
+}
+
+nav> div.nav > div.n2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 90px;
+    position: relative;
+}
+nav> div.nav > div.n2 > label > input{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    width:150%;
+    height: 100%;
+    font-size: 17px;
+    padding-left: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
+nav> div.nav > div.n2 > label > i {
+    position: absolute;
+    color: rgb(245, 156, 39);
+    left: 10%;
+    top: 38.8%;
+    font-size: 22px;
+}
+
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1:hover > div.mi{
+    visibility: visible;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi{
+    display: flex;
+    direction: ltr;
+    width: 615%;
+    height: 250px;
+    position: absolute;
+    margin-top: 20px;
+    visibility:hidden ;
+    background-color: rgba(26, 26, 26, 0.945);
+    border-radius: 10px;
+    flex-direction: row;
+    /* overflow: hidden; */
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi1{
+    left: -500px;
+    top: 74px;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi1 > i{
+    color: rgba(53, 53, 53, 0.418);    
+    position: absolute;
+    left: 545px;
+    font-size: 15px;
+    top: -11.7px;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi2{
+    left: -333px;
+    top: 74px;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi2 > i{
+    color: rgba(53, 53, 53, 0.418);    
+    position: absolute;
+    left: 380px;
+    font-size: 15px;
+    top: -11.7px;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi3{
+    left: -179px;
+    top: 74px;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi3 > i{
+    color: rgba(53, 53, 53, 0.418);    
+    position: absolute;
+    left: 218px;
+    font-size: 15px;
+    top: -11.7px;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul-img{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi > div.ul-img > img{
+    width:90%;
+    position: absolute;
+    left:6px;
+    bottom: 1px;
+    object-fit: cover;
+}
+
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul1{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    text-align: right;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul1 >ul> li{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi > div.ul1 >ul> li > a:hover{
+    color: orange;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi > div.ul1 >ul> li > a > i{
+    color: orange;
+    font-size: 14px;
+    vertical-align: 0px;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul2{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    text-align: right;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul2 >ul> li{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul2 >ul> li > a:hover{
+    color: orange;
+}
+nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi > div.ul2>ul> li > a > i{
+    color: orange;
+    font-size: 14px;
+    vertical-align: 0px;
+}
+
+
+/* end nav  */
+
+
+/* start main */
+main{
+    min-height: 500px;
+}
+main > section#banner{
+    padding: 20px 20px;
+    /* margin-top: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main > section#banner > div.img{
+    width: 70%;
+    height: 500px;
+    background-image: url(../image/series.PNG);
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    
+}
+
+main > section#banner > p#t1{
+    position: absolute;
+    color: rgb(245, 156, 39);
+    left: 17%;
+    top: 38%;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main > section#banner > p#t2{
+    color:rgb(245, 156, 39) ;
+    position: absolute;
+    left: 17%;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 90%;
+}
+main > section#banner > p#t2 > sub{
+    color: aliceblue;
+}
+main > section#banner > p#t3{
+    background-color:rgb(245, 156, 39) ;
+    display: inline-block;
+    padding:4px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    position: absolute;
+    left: 17%;
+    top: 97%;
+    text-shadow: 2px 2px 10px rgb(36, 36, 36);
+}
+main > section#banner > p#t4{
+    position: absolute;
+    color:rgb(245, 156, 39) ;
+    font-size: 32px;
+    left: 17%;
+    top: 105%;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main > section#banner >i.bx-heart{
+    position: absolute;
+    color: gainsboro;
+    right: 25%;
+    font-size: 22px;
+    border: 1px solid gainsboro;
+    padding: 3px;
+    border-radius: 50%;
+    text-align: center;
+    top: 97%;
+}
+main > section#banner > p#t1 > i{
+    font-size: 25px;
+    vertical-align: -6px;
+}
+
+main > section.D-film > div.film-head{
+    width: 100vw;
+    height: 30vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main > section.D-film > div.film-head > h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 5px solid rgb(245, 156, 39);
+    padding-bottom: 7px;
+}
+main > section.D-film > div#film-item{
+    width: 100%;
+    min-height:600px ;
+    /* background-color: rgb(248, 115, 115); */
+    padding: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main > section.D-film > div#film-item > a > div.film-poster{
+    width: 200px;
+    height: 315px;
+    /* background-color: rgb(68, 68, 245); */
+}
+main > section.D-film > div#film-item > a:hover > div.film-poster > div.image-poster > img{
+    filter: blur(2px);
+}
+main > section.D-film > div#film-item > a > div.film-poster > div.image-poster{
+    width: 100%;
+    height: 88%;
+    /* background-color: darkgreen; */
+    position: relative;
+}
+main > section.D-film > div#film-item > a > div.film-poster > div.image-poster > h3{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    transform: translate(-50% , -50%);
+    font-size: 28px;
+    font-weight: bold;
+    visibility: hidden;
+    background-color: rgba(245, 156, 39, 0.842);
+    padding: 3px 5px;
+    /* border-radius: 15px; */
+    width: 100%;
+}
+main > section.D-film > div#film-item > a:hover > div.film-poster > div.image-poster > h3{
+    filter: none;
+    visibility: visible;
+}
+main > section.D-film > div#film-item > a > div.film-poster > div.image-poster > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 4px; */
+}
+main > section.D-film > div#film-item > a > div.film-poster > div.content-poster{
+    width: 100%;
+    height: 12%;
+    /* background-color: red; */
+}
+main > section.D-film > div#film-item > a > div.film-poster > div.content-poster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+
+
+/* end main */
+
+
+
+/* start footer */
+
+footer{
+    width: 100vw;
+    min-height: 100px;
+    background-color: rgb(27, 27, 27);
+    margin-top: 100px;
+}
+footer > div#all{
+    padding: 70px 30px;
+    display: flex;
+}
+footer > div#all > div.center{
+    width: 33%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+footer > div#all > div.center > div.img{
+    width: 90%;
+    height: 95%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+footer > div#all > div.center > div.img > img{
+    width: 100%;
+    height: 100%;
+}
+/* footer > div#all > div.center > div.news{
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+} */
+footer > div#all > div.center > p{
+    color: white;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 10%;
+    bottom: 12%;
+}
+
+footer > div#all > div.right{
+    display: flex;
+    width: 33%;
+    justify-content: space-evenly;
+}
+footer > div#all > div.right > div.ul1 > ul > li{
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: bold;
+    /* font-family:Arial, Helvetica, sans-serif; */
+}
+footer > div#all > div.right > div.ul1 > ul > li >a:hover{
+    color: rgb(245, 156, 39);
+}
+footer > div#all > div.right > div.ul2 > ul > li{
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: bold;
+    /* font-family:Arial, Helvetica, sans-serif; */
+}
+footer > div#all > div.right > div.ul2 > ul > li >a:hover{
+    color: rgb(245, 156, 39);
+}
+footer > div#all > div.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+    width: 33%;
+}
+footer > div#all > div.left > a#tel-icon{
+    display: flex;
+    background-color: #141414f5;
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    border-radius: 10px;
+}
+footer > div#all > div.left > a#tel-icon > span.icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+footer > div#all > div.left > a#tel-icon > span.icon > i{
+    font-size: 28px;
+    color: rgb(245, 156, 39);
+    margin-left: 92%;
+}
+footer > div#all > div.left > a#tel-icon > span.icon > i::after{
+    content: "/";
+    font-size: 32px;
+    color: white;
+    margin-right: 10px;
+}
+footer > div#all > div.left > a#tel-icon > span.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > div#all > div.left > a#tel-icon > span.info > div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+footer > div#all > div.left > a#tel-icon > span.info > div > small{
+    color: rgb(245, 156, 39);
+
+}
+footer > div#all > div.left > a#insta-icon{
+    display: flex;
+    background-color: #141414f5;
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    border-radius: 10px;
+}
+footer > div#all > div.left > a#insta-icon > span.icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+footer > div#all > div.left > a#insta-icon > span.icon > i{
+    font-size: 28px;
+    color: rgb(245, 156, 39);
+    margin-left: 92%;
+}
+footer > div#all > div.left > a#insta-icon > span.icon > i::after{
+    content: "/";
+    font-size: 32px;
+    color: white;
+    margin-right: 10px;
+}
+footer > div#all > div.left > a#insta-icon > span.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > div#all > div.left > a#insta-icon > span.info > div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+footer > div#all > div.left > a#insta-icon > span.info > div > small{
+    color: rgb(245, 156, 39);
+}
+footer > div#rul{
+    padding-bottom: 15px;
+    padding-right: 55px;
+}
+footer > div#rul > p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 650px){
+    section#film > div.film-item > div.film-left > div.card{
+        display: inline-block;
+        min-height:1180px;
+    }
+    section#film > div.film-item > div.film-left > div.card > div.cover{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+        height: 80%;
+    }
+    section#film > div.film-item > div.film-left > div.card > div.info-cover > div.info-cover-item > div.translate > div.icon{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    section#film > div.film-item > div.film-left > div.card > div.info-cover > div.info-cover-item > div.info-item-title{
+        width: 135%;
+        display: flex;
+        justify-content: space-between;
+    }
+    section#film > div.film-item > div.film-left > div.card > div.info-cover > div.info-cover-item > div.info-film > div.about-film{
+        width:150%;
+    }
+    footer > div#all{
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        width: 100%;
+        /* justify-content: center; */
+        align-items: center;
+        gap:80px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer > div#all > div.center{
+        width: 100%;
+    }
+    footer > div#all > div.right{
+        width: 100%;
+    }
+    /* footer > div#all > div.left{
+        width: 100%;
+    } */
+    footer > div#all > div.center > p{
+        font-size: 15px;
+    }
+
+
+}
+/* Extra small devices (phones, 790px and down) */
+@media only screen and (max-width: 790px) {
+
+    nav> div.nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > a > i{
+        visibility: hidden;
+    }
+    nav> div.nav > div.n1{
+        width: 100%;
+    }
+    nav> div.nav > div.n1 > ul.menu1{
+        width: 100vw;
+    }
+    nav> div.nav > div.n1 > ul.menu1 > li.menu-item1{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin-right: 1px;
+        width: 20vw;
+    }
+    nav> div.nav > div.n2 > label > input{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80vw;
+    }
+    nav> div.nav > div.n2{
+        width: 100%;
+    }
+    main > section#banner > div.img{
+        width: 100%;
+    }
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi{
+        display: flex;
+        width: 340%;
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        height:120px;
+        position: absolute;
+        margin-left: 60%;
+        margin-top: -130%;
+        /* left: 20%; */
+        /* margin: 20px auto; */
+        /* visibility:hidden ; */
+        background-color: rgba(21, 21, 21, 0.945);
+        border-radius: 10px;
+        flex-direction: column;
+        
+    }
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi1{
+        margin-left: 90%;
+        margin-top: -130%;
+    }
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi a {
+        font-size: 12px;
+    }
+    nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul-img{
+        width: 0;
+        height: 0;
+    }
+
+    nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul2{
+        width: 100%;
+        min-height: 70%;
+    }
+    nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul1{
+        width: 100%;
+        min-height: 30%;
+    }
+    nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul2 >ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* background-color: aqua; */
+        min-height: 100%;
+        gap: 10px;
+    }
+    nav > div.nav > div.n1 > ul.menu1 > li.menu-item1 > div.mi > div.ul1 >ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        /* margin-right: 50px; */
+        min-height: 100%;
+        /* background-color: red; */
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div.mi > div.ul-img > img{
+        visibility: hidden;
+    }
+
+}
+@media only screen and (max-width: 840px){
+    footer > div#all{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        width: 100%;
+        justify-content: center;
+        gap:10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    /* footer > div#all > div.center{
+        width: 45%;
+    }
+    footer > div#all > div.right{
+        width:45%;
+    } */
+    footer > div#all > div.left{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer > div#all > div.left > a#insta-icon{
+        width: 100%;
+    }
+    footer > div#all > div.left > a#tel-icon{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 650px){
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi1{
+        margin-left: 120%;
+        margin-top: -150%;
+    }
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi2{
+        margin-left: 100%;
+        margin-top: -155%;
+    }
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi3{
+        margin-left: 62%;
+        margin-top: -255%;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 700px and up) */
+@media only screen and (max-width: 710px) {
+
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi1{
+        margin-left: 100%;
+        margin-top: -145%;
+        width: 0;
+        visibility: hidden;
+    }
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi2{
+        margin-left: 100%;
+        margin-top: -145%;
+        width: 0;
+        visibility: hidden;
+    }
+    nav > div.nav> div.n1  > ul.menu1 > li.menu-item1 > div#mi3{
+        margin-left: 100%;
+        margin-top: -145%;
+        width: 0;
+        visibility: hidden;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 788px) {
+    section#filter > div.filter-left > div.filter-left1{
+        min-height: 60%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    section#filter > div.filter-left > div.filter-left2{
+        min-height: 60%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    section#filter > div.filter-left > div.filter-left3{
+        min-height: 60%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    section#filter > div.filter-left > div.filter-left2 > div.country > label > select{
+        width: 100%;
+    }
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 972px) {
+    section#filter > div.filter-right{
+        visibility: hidden;
+        width: 0;
+    }
+    hr{
+        visibility: hidden;
+    }
+    section#filter > div.filter-left{
+        width: 100%;
+        /* flex-wrap: wrap; */
+    }
+    section#film > div.film-item{
+        display: block;
+        width: 100%;
+
+    }
+    section#film > div.film-item > div.series-right > div.series-right1 > div.series-right-title > i{
+        visibility: hidden;
+        font-size: 0;
+    }
+    section#film > div.film-item > div.series-right{
+        width: 87.5%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        margin: 20px auto;
+    }
+    section#film > div.film-item > div.series-right > div.series-right1 > div#series-first > a > img{
+        object-fit: contain;
+    }
+    section#film > div.film-item > div.series-right > div.series-right1 > div.series-other > a > img{
+        object-fit: fill;
+    }
+    section#film > div.film-item > div.film-left{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        width: 87.5%;
+        margin: 20px auto;
+
+    }
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1000px) {
+    section#film > div.film-item > div.film-left > div.card > div.cover > a > div.cover-trailer{
+        width: 85%;
+        margin-right: 15px;
+        min-height: 70%;
+        background-color: rgb(22, 22, 22);
+
+    }
+    section#film > div.film-item > div.film-left > div.card > div.cover > a > div.cover-trailer > div.text-holder{
+        background-color: rgb(22, 22, 22);
+
+    }
+    section#film > div.film-item > div.film-left > div.card > div.cover > a > div.cover-trailer > div.icon-holder{
+        width: 0%;
+        height: 0%;
+    }
+    section#film > div.film-item > div.film-left > div.card > div.cover > a > div.cover-trailer > div.text-holder::before{
+        width: 0%;
+        height: 0%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
+@media only screen and (max-width: 1270px) {
+    main > section#banner > p#t1{
+        visibility: hidden;
+    }
+    main > section#banner > p#t2{
+        visibility: hidden;
+    }
+    main > section#banner > p#t3{
+        visibility: hidden;
+    }
+    main > section#banner > p#t4{
+        visibility: hidden;
+    }
+    main > section#banner > div.img{
+        max-width:90% ;
+    }
+
+}
